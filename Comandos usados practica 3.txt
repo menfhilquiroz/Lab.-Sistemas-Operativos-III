@@ -1,0 +1,18 @@
+Comandos usados practica 3
+
+=============================================================
+
+date
+su
+cat /etc/sudoers
+sudo adduser leandro01
+sudo visudo  leandro01
+groups leandro01
+cat /etc/passwd
+sudo addgroup guest
+sudo adduser juan
+sudo usermod -aG guest juan
+groups juan
+sudo deluser juan
+sudo delgroup guest
+cat /etc/group
