@@ -1,0 +1,20 @@
+Comandos usados practica 2
+
+=============================================================
+
+
+date
+su
+sudo ip addr flush dev ens33
+sudo systemctl restart NetworkManager
+ip a
+nmcli device show
+cat /etc/resolv.conf
+sudo nmcli con add type ethernet ifname ens33 con-name static-ip \
+ipv4.addresses 192.168.1.100/24 \
+ipv4.gateway 192.168.1.1 \
+ipv4.dns "8.8.8.8 8.8.4.4" \
+ipv4.method manual
+sudo nmcli con up static-ip
+sudo nmcli connection delete static-ip
+sudo nmtui
